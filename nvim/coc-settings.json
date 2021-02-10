@@ -1,0 +1,13 @@
+{
+	"emmet.includeLanguages": {
+		"vue-html": "html",
+		"javascript": "javascriptreact"
+	},
+	"coc.preferences.formatOnSaveFiletypes": ["*"],
+	"explorer.width": 30,
+	"coc.preferences.extensionUpdateCheck": "daily",
+	"explorer.icon.enableNerdfont": true,
+	"explorer.file.showHiddenFiles": true,
+	"explorer.previewAction.onHover": false,
+	"prettier.requireConfig": true
+}
