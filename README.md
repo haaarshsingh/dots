@@ -7,7 +7,7 @@
 | Link                                                                      | Description                                                                       |
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | [Pop!_OS](https://pop.system76.com/)                                      | Lightweight Linux distro based off of Ubuntu                                      |
-| [i3-gaps](https://github.com/Airblader/i3)                                | A tiling window manager                                                           |
+| [i3wm](https://github.com/Airblader/i3)                                   | A tiling window manager                                                           |
 | [i3-gaps](https://github.com/Airblader/i3)                                | Fork of i3 with enhanced features like gaps                                       |
 | [Rofi](https://github.com/DaveDavenport/rofi)                             | A window switcher, application launcher and dmenu replacement                     |
 | [Compton](https://github.com/chjj/compton)                                | A compositor for X, to get window transparency and avoid tearing and vsync issues |
