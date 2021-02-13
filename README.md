@@ -1,5 +1,7 @@
 # dotfiles
 
+*watch a [video tour](https://www.youtube.com/watch?v=3C7v7w93wa8)*
+
 ![image](https://user-images.githubusercontent.com/69592270/107448427-a7dea580-6b0f-11eb-8529-1a71bd7d90ec.png)
 
 # Apps/Packages
