@@ -19,3 +19,4 @@
 | [Alacritty](https://github.com/alacritty/alacritty/)                      | A cross-platform, OpenGL terminal emulator.                                       |
 | [arandr](https://christian.amsuess.com/tools/arandr/)                     | GUI for xrandr                                                                    |
 | [starship.rs](https://starship.rs/)                                       | The minimal, blazing-fast, and infinitely customizable prompt for any shell!      |
+| [neofetch](https://github.com/dylanaraps/neofetch)                        | Command line system information tool                                              |
