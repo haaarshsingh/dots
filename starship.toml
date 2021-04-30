@@ -5,26 +5,23 @@ add_newline = true
 [package]
 disabled = true
 
+[username]
+style_user = "white bold"
+style_root = "black bold"
+disabled = false
+show_always = true
+
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (= 10 sec)
 format = "took [$duration]($style)"
 
 [character]
-success_symbol = "[➜](bold green) "
-error_symbol = "[X](bold red) "
-
-[battery]
-full_symbol = "🔋"
-charging_symbol = "⚡️"
-discharging_symbol = "💀"
-
-[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
-threshold = 30
-style = "bold yellow"
-
-[[battery.display]]  # "bold red" style when capacity is between 0% and 20%
-threshold = 20 
-style = "bold red"
+success_symbol = """
+[│](bold green)$directory$rust$package
+[└─>](bold green) """
+error_symbol = """
+[│](bold red)$directory$rust$package
+[└─>](bold red) """
 
 # Clear visibility for exit codes
 [status]
@@ -32,9 +29,3 @@ style = "bg:red"
 symbol = "💣 "
 format = '[\[$symbol$status\]]($style) '
 disabled = false
-
-[memory_usage]
-disabled = false
-threshold = -1
-symbol = " "
-style = "bold dimmed green"
