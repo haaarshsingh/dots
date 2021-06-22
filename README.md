@@ -1,8 +1,9 @@
 # dotfiles
 
-![image](https://user-images.githubusercontent.com/69592270/116720866-abfdbf00-a9aa-11eb-9657-2424d21fecd5.png)
+![image](https://user-images.githubusercontent.com/69592270/122867380-651bae00-d2f7-11eb-9795-9fd69199a58c.png)
 
 *video tour coming soon*
+*blog post coming soon*
 
 # Apps/Packages
 
