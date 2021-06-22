@@ -208,8 +208,8 @@ bindsym $mod+r mode "resize"
 
 exec_always $HOME/.config/polybar/launch.sh --hack
 
-# Setup my Nitrogen wallpaper
-exec_always nitrogen --restore &
+# Setup my Feh wallpaper
+exec_always feh --bg-fill ~/Downloads/Junk/Backgrounds/Background.jpg
 exec_always --no-startup-id autotiling
 
 # Duel displays setup, use arandr to get this code.
