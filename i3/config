@@ -161,7 +161,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Open the apps menu.
 
-bindsym $mod+d exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/hack/scripts/rofi/launcher.rasi
+bindsym $mod+d exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/colorblocks/scripts/rofi/launcher.rasi
 
 # Start the emoji picker! Using https://github.com/nkoehring/rofiemoji
 
@@ -206,7 +206,7 @@ bindsym $mod+r mode "resize"
 
 # Launch polybar (theme can be found at https://github.com/adi1090x/polybar-themes)
 
-exec_always $HOME/.config/polybar/launch.sh --hack
+exec_always $HOME/.config/polybar/launch.sh --forest
 
 # Setup my Feh wallpaper
 exec_always feh --bg-fill ~/Downloads/Junk/Backgrounds/Background.jpg
