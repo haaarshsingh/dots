@@ -1,32 +1,72 @@
-# Don't print a new line at the start of the prompt
-add_newline = true
+# ~/.config/starship.toml
 
-# Disable the package module, hiding it from the prompt completely
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[character]
+error_symbol = "[✖](bold red) "
+
+[cmd_duration]
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+format = " took [$duration]($style)"
+
+[directory]
+truncation_length = 5
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+symbol = "💻 on "
+style = "bold yellow"
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+
+[hostname]
+ssh_only = false
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = true
+
+[julia]
+format = "[$symbol$version]($style) "
+symbol = "ஃ "
+style = "bold green"
+
+[memory_usage]
+format = "$symbol[${ram}( | ${swap})]($style) "
+threshold = 70
+style = "bold dimmed white"
+disabled = false
+
 [package]
 disabled = true
 
+[python]
+format = "[$symbol$version]($style) "
+style = "bold green"
+
+[rust]
+format = "[$symbol$version]($style) "
+style = "bold green"
+
+[time]
+time_format = "%T"
+format = "🕙 $time($style) "
+style = "bright-white"
+disabled = false
+
 [username]
-style_user = "white bold"
-style_root = "black bold"
-format = "@[$user]($style) "
-disabled = false
-show_always = true
-
-[cmd_duration]
-min_time = 10_000  # Show command duration over 10,000 milliseconds (= 10 sec)
-format = "took [$duration]($style)"
-
-[character]
-success_symbol = """
-[│](bold green)$directory$rust$package
-[└─>](bold green) """
-error_symbol = """
-[│](bold red)$directory$rust$package
-[└─>](bold red) """
-
-# Clear visibility for exit codes
-[status]
-style = "bg:red"
-symbol = "💣 "
-format = '[\[$symbol$status\]]($style) '
-disabled = false
+style_user = "bold dimmed blue"
+show_always = false
