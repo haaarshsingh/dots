@@ -2,7 +2,9 @@
 
 ![image](https://user-images.githubusercontent.com/69592270/122867380-651bae00-d2f7-11eb-9795-9fd69199a58c.png)
 
-*video tour coming soon* -- *blog post coming soon*
+*video tour coming soon*
+
+For a more detailed guide, check out my [blog post]
 
 # Apps/Packages
 
@@ -12,7 +14,7 @@
 | [i3wm](https://github.com/Airblader/i3)                                   | A tiling window manager                                                           |
 | [i3-gaps](https://github.com/Airblader/i3)                                | Fork of i3 with enhanced features like gaps                                       |
 | [Rofi](https://github.com/DaveDavenport/rofi)                             | A window switcher, application launcher and dmenu replacement                     |
-| [Compton](https://github.com/chjj/compton)                                | A compositor for X, to get window transparency and avoid tearing and vsync issues |
+| [Picom](https://github.com/yshui/picom)                                   | A compositor for X, to get window transparency and avoid tearing and vsync issues |
 | [Nitrogen](https://wiki.archlinux.org/index.php/Nitrogen)                 | Set wallpapers for i3wm                                                           |
 | [Polybar](https://github.com/polybar/polybar)                             | Fast and easy to use status bar                                                   |
 | [Neovim](https://neovim.io/)                                              | Vim-fork focused on extensibility and usability                                   |
@@ -20,7 +22,7 @@
 | [arandr](https://christian.amsuess.com/tools/arandr/)                     | GUI for xrandr                                                                    |
 | [starship.rs](https://starship.rs/)                                       | The minimal, blazing-fast, and infinitely customizable prompt for any shell!      |
 | [neofetch](https://github.com/dylanaraps/neofetch)                        | Command line system information tool                                              |
-| [NuShell](https://www.nushell.sh/)                                        | A new type of shell                                                               |
+| [Fish](https://fishshell.com/)                                            | A user-friendly command line                                                      |
 
 # Installation 
 
@@ -60,6 +62,8 @@ Optionally, if you need a video guide, I suggest [this one](https://www.youtube.
 
  - Install polybar for Arch `sudo pacman -S polybar`
 
+ This is a bit complicated, I suggest you follow by [blog post] for a better guide
+
 # Neovim
 
  - My neovim config requires v0.5 or above. At this current time (30/4/21) Neovim 0.5 is not out of beta yet.
@@ -68,7 +72,6 @@ Optionally, if you need a video guide, I suggest [this one](https://www.youtube.
 
  - Open up neovim using `nvim`
  - Install required packages using Packer `:PackerInstall`
- - Install CoC packages `:CocInstall`
 
 # Alacritty
 
@@ -88,7 +91,9 @@ Optionally, if you need a video guide, I suggest [this one](https://www.youtube.
 
  - Install Neofetch for Arch `sudo pacman -S neofetch`
 
-# NuShell
+# Fish
 
- - Install NuShell for Arch `yay -S nushell`
- - Set as default shell `chsh -s /usr/bin/nu`
+ - Install NuShell for Arch `sudo pacman -S nushell`
+ - Set as default shell `chsh -s /usr/bin/fish`
+
+[blog post]: https://harshhhdev.github.io/blog/ricing-arch-linux
