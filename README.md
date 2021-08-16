@@ -93,7 +93,7 @@ Optionally, if you need a video guide, I suggest [this one](https://www.youtube.
 
 # Fish
 
- - Install NuShell for Arch `sudo pacman -S nushell`
+ - Install Fish for Arch `sudo pacman -S fish`
  - Set as default shell `chsh -s /usr/bin/fish`
 
 [blog post]: https://harshhhdev.github.io/blog/ricing-arch-linux
