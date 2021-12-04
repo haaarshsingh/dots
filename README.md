@@ -6,7 +6,7 @@
 </p> 
 <p align="center">:computer: Pastel themed i3wm Rice (Archcraft)</p>
 <p align="center">
-  <a href="https://github.com/harshhhdev/dotfiles#-gallery">Image Gallery</a>
+  <a href="https://github.com/harshhhdev/dotfiles#%EF%B8%8F-gallery">Image Gallery</a>
     ·
   <a href="https://github.com/harshhhdev/dotfiles#-colours">Colours</a>
  </p>
