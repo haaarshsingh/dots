@@ -1,103 +1,49 @@
-#     _    _                 _ _____ _______   __
-#    / \  | | __ _  ___ _ __(_)_   _|_   _\ \ / /
-#   / _ \ | |/ _` |/ __| '__| | | |   | |  \ V /
-#  / ___ \| | (_| | (__| |  | | | |   | |   | |
-# /_/   \_\_|\__,_|\___|_|  |_| |_|   |_|   |_|
-#
-# See this wiki page for more info:
-# https://github.com/jwilm/alacritty/wiki
-#
-# For an example config please visit:
-# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
+#   /$$$$$$  /$$                               /$$   /$$     /$$              
+#  /$$__  $$| $$                              |__/  | $$    | $$              
+# | $$  \ $$| $$  /$$$$$$   /$$$$$$$  /$$$$$$  /$$ /$$$$$$ /$$$$$$   /$$   /$$
+# | $$$$$$$$| $$ |____  $$ /$$_____/ /$$__  $$| $$|_  $$_/|_  $$_/  | $$  | $$
+# | $$__  $$| $$  /$$$$$$$| $$      | $$  \__/| $$  | $$    | $$    | $$  | $$
+# | $$  | $$| $$ /$$__  $$| $$      | $$      | $$  | $$ /$$| $$ /$$| $$  | $$
+# | $$  | $$| $$|  $$$$$$$|  $$$$$$$| $$      | $$  |  $$$$/|  $$$$/|  $$$$$$$
+# |__/  |__/|__/ \_______/ \_______/|__/      |__/   \___/   \___/   \____  $$
+#                                                                    /$$  | $$
+#                                                                   |  $$$$$$/
+#                                                                    \______/ 
+
+## Import files (Colors, Fonts, Etc)
+import:
+  - ~/.config/alacritty/colors.yml
+  - ~/.config/alacritty/fonts.yml
 
 env:
-  TERM: xterm-256color
+  TERM: alacritty
+  WINIT_X11_SCALE_FACTOR: '1.0'
 
-# Window configurations
 window:
+  dimensions:
+    columns: 82
+    lines: 25
+
+  padding:
+    x: 40
+    y: 40
+
   decorations: full
+  startup_mode: Windowed
+  dynamic_title: true
 
-scrolling:
-  multiplier: 1
+# scrolling
+  history: 10000
+  multiplier: 3
 
-draw_bold_text_with_bright_colors: true
-
-# Colours (Nord)
-colors:
-    # Default colors
-    primary:
-        background: "#1c1c1c"
-        foreground: "#D8DEE9"
-
-    # Normal colors
-    normal:
-        black: "#3B4252"
-        red: "#BF616A"
-        green: "#A3BE8C"
-        yellow: "#EBCB8B"
-        blue: "#81A1C1"
-        magenta: "#B48EAD"
-        cyan: "#88C0D0"
-        white: "#E5E9F0"
-
-    # Bright colors
-    bright:
-        black: "#4C566A"
-        red: "#BF616A"
-        green: "#A3BE8C"
-        yellow: "#EBCB8B"
-        blue: "#81A1C1"
-        magenta: "#B48EAD"
-        cyan: "#8FBCBB"
-        white: "#ECEFF4"
-
-# Visual bell
-bell:
-  animation: EaseOutExpo
-  duration: 0
-
-# Change the transparency
-background_opacity: 0.8
-
-selection:
-  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
-  save_to_clipboard: true
-
-mouse:
-  double_click: { threshold: 300 }
-  triple_click: { threshold: 300 }
-  faux_scrolling_lines: 1
-  hide_when_typing: false
-
-
-# Reload the config live.
-live_config_reload: true
-
-# TODO: Update alacritty to new version w/ cursor blinks
-# This won't work for Alacritty v7. Refer to https://github.com/alacritty/alacritty/blob/master/alacritty.yml
+# Cursor
+# Requires v8+
 cursor:
-  style: Beam
+  style:
+    shape: Block
+    blinking: On
+
   unfocused_hollow: false
 
-
-# Keybindings
-key_bindings:
-  - { key: V,        mods: Control|Shift, action: Paste            }
-  - { key: C,        mods: Control|Shift, action: Copy             }
-  - { key: Insert,   mods: Shift,         action: PasteSelection   }
-  - { key: Key0,     mods: Control,       action: ResetFontSize    }
-  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  - { key: L,         mods: Control,                    action: ClearLogNotice }
-  - { key: PageUp,    mods: Shift,   mode: ~Alt,        action: ScrollPageUp,  }
-  - { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
-  - { key: Home,      mods: Shift,   mode: ~Alt,        action: ScrollToTop,   }
-  - { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
-  - { key: Plus,     mods: Control,       action: IncreaseFontSize }
-  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-
-
-selection:
-  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
-
-
+# reloading changes
+live_config_reload: true

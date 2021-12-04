@@ -1,0 +1,27 @@
+# Pastel colour scheme
+# Read through the README for HEX codes & other information
+
+colors:
+  primary:
+    background: '#1D212A'
+    foreground: '#E3E3E3'
+
+  normal:
+    black:   '#1D212A'
+    red:     '#FC8993'
+    green:   '#89E19C'
+    yellow:  '#FBDF90'
+    blue:    '#A7BDFB'
+    magenta: '#D990CD'
+    cyan:    '#81D4EE'
+    white:   '#E3E3E3'
+
+  bright:
+    black:   '#585E74'
+    red:     '#FB9199'
+    green:   '#8DE19F'
+    yellow:  '#FFE28E'
+    blue:    '#AFC3FB'
+    magenta: '#DF95D3'
+    cyan:    '#81D4EE'
+    white:   '#E3E3E3'

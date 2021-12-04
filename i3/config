@@ -1,38 +1,38 @@
-#  _ _____                    __ _
-# (_)___ /    ___ ___  _ __  / _(_) __ _
-# | | |_ \   / __/ _ \| '_ \| |_| |/ _` |
-# | |___) | | (_| (_) | | | |  _| | (_| |
-# |_|____/   \___\___/|_| |_|_| |_|\__, |
-#                                  |___/
+#  /$$  /$$$$$$                                       /$$$$$$  /$$          
+# |__/ /$$__  $$                                     /$$__  $$|__/          
+#  /$$|__/  \ $$        /$$$$$$$  /$$$$$$  /$$$$$$$ | $$  \__/ /$$  /$$$$$$ 
+# | $$   /$$$$$/       /$$_____/ /$$__  $$| $$__  $$| $$$$    | $$ /$$__  $$
+# | $$  |___  $$      | $$      | $$  \ $$| $$  \ $$| $$_/    | $$| $$  \ $$
+# | $$ /$$  \ $$      | $$      | $$  | $$| $$  | $$| $$      | $$| $$  | $$
+# | $$|  $$$$$$/      |  $$$$$$$|  $$$$$$/| $$  | $$| $$      | $$|  $$$$$$$
+# |__/ \______/        \_______/ \______/ |__/  |__/|__/      |__/ \____  $$
+#                                                                  /$$  \ $$
+#                                                                 |  $$$$$$/
+#                                                                  \______/ 
 
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# Set the mod key to the "super" key (windows/option key)
-
+# Windows or "super" key
 set $mod Mod4
-
-# Colours
-
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-#
-# ProductSans font (can be downloaded at https://www.dafontfree.io/product-sans-font-family/)
-font pango:ProductSans-Regular 10
+font pango:monospace 8
 
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+
+# Start XDG autostart .desktop files using dex. See also
+# https://wiki.archlinux.org/index.php/XDG_Autostart
+exec --no-startup-id dex --autostart --environment i3
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-sessionW to lock your screen.
+# screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -41,36 +41,31 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-# Use Mouse+$mod to drag floating windows to their wanted position
+# NOTE :- XF86 keys don't work on my keyboard
+# replace with XF86AudioRaiseVolume, XF86AudioLowerVolume, XF86AudioMute, & XF86MicMute respectively
+bindsym $mod+p exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% && $refresh_i3status
+bindsym $mod+o exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2% && $refresh_i3status
+bindsym $mod+Shift+p exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym $mod+Shift+o exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# Configure i3 gaps
+# rounded corners in borders
+# requires i3-gaps-rounded-git
+# https://aur.archlinux.org/packages/i3-gaps-rounded-git/
+border_radius 10
+
+# set gaps around windows
 gaps inner 15
 gaps outer 12
 
-# Set border to 3px
-for_window [class="^.*"] border pixel 5
-
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-
+# remove borders for rounded corners
+for_window [class="^.*"] border pixel 0
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# Take a screenshot using Flameshot (https://flameshot.org/)
-bindsym $mod+Shift+s exec flameshot gui
-
-# start dmenu (a program launcher)
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-
 
 # change focus
 bindsym $mod+j focus left
@@ -113,6 +108,9 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
+exec_always killall polybar
+exec_always $HOME/.config/i3/polybar/launch.sh
+
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
@@ -152,25 +150,21 @@ bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $
+bindsym $mod+Shift+5 move container to workspace number $ws5
 bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# Open the apps menu.
-
-bindsym $mod+d exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/colorblocks/scripts/rofi/launcher.rasi
-
-# Start the emoji picker! Using https://github.com/nkoehring/rofiemoji
-
-bindsym $mod+q exec rofi -modi 'run#drun#emoji:~/Downloads/Junk/rofiemoji/rofiemoji.sh' -show emoji
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -196,31 +190,32 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+Shift+z   layout splitv;\
-                       move left;\
-                       resize grow right 20 px or 20 ppt;\
-                       split v;\
-                       layout stacking
-
 bindsym $mod+r mode "resize"
 
-# Launch polybar (theme can be found at https://github.com/adi1090x/polybar-themes)
+# USER MODULES
 
-exec_always $HOME/.config/polybar/launch.sh --forest
+# start our emoji picker (https://github.com/fdw/rofimoji)
+bindsym $mod+Shift+period exec rofimoji
 
-# Setup my Feh wallpaper
-exec_always feh --bg-fill ~/Downloads/Junk/Backgrounds/Background.jpg
+# setup wallpaper with feh 
+# https://wiki.archlinux.org/title/feh
+exec_always feh --bg-fill ~/Downloads/Wallpapers/Pastel.jpg
+
+# autosort windows when they're created
+# https://github.com/nwg-piotr/autotiling
 exec_always --no-startup-id autotiling
 
-# Duel displays setup, use arandr to get this code.
+# Launch Flameshot (screenshot tool)
+# https://flameshot.org/
+bindsym $mod+Shift+s exec flameshot gui
+bindsym $mod+d exec ~/.config/rofi/launchers/slate/launcher.sh
 
-exec_always xrandr --output eDP-1 --mode 1366x768 --pos 1920x0 --rotate normal --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal
-exec_always compton --config ~/.config/compton/compton.conf
+# Open alacritty
+# https://github.com/alacritty/alacritty
+# Config file at ~/.config/alacritty/alacritty.yml
+bindsym $mod+Return exec alacritty
 
-# Window border colours
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #abb2bf
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-client.background       #ffffff
+# Start compton compositor
+# https://github.com/chjj/compton
+# NOTE :- planning to upgrade to picom soon as Compton is no longer maintained
+exec_always compton --config ~/.config/compton/compton.conf --experimental-backends
