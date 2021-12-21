@@ -9,9 +9,8 @@
   <a href="https://github.com/harshhhdev/dotfiles#%EF%B8%8F-gallery">Image Gallery</a>
     ·
   <a href="https://github.com/harshhhdev/dotfiles#-colours">Colours</a>
- </p>
- <p align="center">
-  <i align="center">Video tour coming soon</i>
+      ·
+  <a href="https://youtu.be/c_LK3sYhFw8">Video Tour</a>
  </p>
  
 # 👨‍💻 Applications
@@ -48,6 +47,8 @@
  - [PSU :- EVGA 600Q 80+ Bronze 600W Semi-Modular](https://www.evga.com/products/product.aspx?pn=110-BQ-0600-K1)
 
 # 🖼️ Gallery
+
+*Watch a [video tour!](https://youtu.be/c_LK3sYhFw8)*
 
 ![image](https://user-images.githubusercontent.com/69592270/144723641-b42d960d-5fca-42e1-99f1-ac11b4cb160b.png)
 ![image](https://user-images.githubusercontent.com/69592270/144723771-11286d0d-0141-4564-b825-4fafc15e11ea.png)
