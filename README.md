@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://github.com/harshhhdev/dotfiles/blob/master/Banner.png" />
-  <a href="https://harshhhdev.github.io/">
+  <img src="https://user-images.githubusercontent.com/69592270/201533156-97b338c5-83ac-4eac-a1b4-59630016ea89.png" />
+  <a href="https://harshsingh.xyz/">
     <h2 align="center">dotfiles</h2>
   </a>
 </p> 
-<p align="center">:computer: Pastel themed i3wm Rice (Archcraft)</p>
+<p align="center">Pastel-themed i3wm and Arch Linux rice</p>
 <p align="center">
   <a href="https://github.com/harshhhdev/dotfiles#%EF%B8%8F-gallery">Image Gallery</a>
     ·
@@ -13,7 +13,7 @@
   <a href="https://youtu.be/c_LK3sYhFw8">Video Tour</a>
  </p>
  
-# 👨‍💻 Applications
+## Applications
 
  - [Archcraft](https://archcraft.io/)
  - [i3-gaps-rounded](https://github.com/terroo/i3-radius)
@@ -37,16 +37,7 @@
  - [bat](https://github.com/sharkdp/bat)
  - [Flameshot](https://flameshot.org/)
  
-# :computer: Computer Specs
-
- - [CPU :- AMD Ryzen 7 5700G (APU)](https://www.amd.com/en/products/apu/amd-ryzen-7-5700g)
- - [Mobo :- Gigabyte B550 DS3H](https://www.gigabyte.com/Motherboard/B550M-DS3H-rev-1x)
- - [RAM :- Silicon Power XPOWER Turbine 16GB DDR4-3200](https://amzn.to/31sOQO6)
- - [SSD :- WD Blue SATA M.2 SSD 500GB](https://www.westerndigital.com/products/internal-drives/wd-blue-sata-m-2-ssd#WDS500G2B0B)
- - [Case :- CoolerMaster MasterBox Q300L Micro-ATX Tower](https://www.coolermaster.com/catalog/cases/mini-tower/masterbox-q300l/)
- - [PSU :- EVGA 600Q 80+ Bronze 600W Semi-Modular](https://www.evga.com/products/product.aspx?pn=110-BQ-0600-K1)
-
-# 🖼️ Gallery
+## Gallery
 
 *Watch a [video tour!](https://youtu.be/c_LK3sYhFw8)*
 
@@ -55,7 +46,7 @@
 ![image](https://user-images.githubusercontent.com/69592270/144723927-2c924750-e5fc-487e-a336-4ee57b269038.png)
 ![image](https://user-images.githubusercontent.com/69592270/144723969-f8345c5a-29ab-4ee5-bded-ea014cef8b72.png)
 
-# 🎨 Colours
+## Colours
 
 | Color       | Hex                                                                |
 | ----------- | ------------------------------------------------------------------ |
@@ -70,18 +61,9 @@
 | Cyan        | ![#81D4EE](https://via.placeholder.com/10/81D4EE?text=+) `#81D4EE` |
 | White       | ![#E3E3E3](https://via.placeholder.com/10/E3E3E3?text=+) `#E3E3E3` |
 
-# :clap: Credits
+## Credits
 
  - [obliviousofcraps's dotfiles](https://github.com/obliviousofcraps/mf-dots)
  - [Wallpaper](https://twitter.com/owakita_/status/1259478540447350784?lang=en)
  - [r/unixporn's post of the month](https://www.reddit.com/r/unixporn/wiki/info/postofthemonth)
 
-# 🤞 Contributing
-
-After setting up the project, and making changes:
-
-```git
-git add .
-git commit -m "commit message"
-git push YOUR_REPO_URL YOUR_BRANCH
-```
