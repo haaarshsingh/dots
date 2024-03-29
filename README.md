@@ -13,29 +13,29 @@
   <a href="https://youtu.be/c_LK3sYhFw8">Video Tour</a>
  </p>
  
-## Applications
+> ## Applications
 
- - [Archcraft](https://archcraft.io/)
- - [i3-gaps-rounded](https://github.com/terroo/i3-radius)
- - [BetterDiscord](https://betterdiscord.app/)
- - [starship.rs](https://starship.rs/)
- - [cava](https://github.com/karlstav/cava)
- - [dunst](https://dunst-project.org/)
- - [gotop](https://github.com/cjbassi/gotop)
- - [htop](https://htop.dev/)
- - [spicetify](https://github.com/khanhas/spicetify-cli)
- - [rofi](https://github.com/davatorium/rofi)
- - [ranger](https://ranger.github.io/)
- - [Vim](https://www.vim.org/)
- - [NuShell](https://www.nushell.sh/)
- - [Alacritty](https://github.com/alacritty/alacritty)
- - [compton](https://github.com/chjj/compton)
- - [neofetch](https://github.com/dylanaraps/neofetch)
- - [pfetch](https://github.com/dylanaraps/pfetch)
- - [cpufetch](https://github.com/Dr-Noob/cpufetch)
- - [polybar](https://polybar.github.io/)
- - [bat](https://github.com/sharkdp/bat)
- - [Flameshot](https://flameshot.org/)
+ > - [Archcraft](https://archcraft.io/)
+ > - [i3-gaps-rounded](https://github.com/terroo/i3-radius)
+ > - [BetterDiscord](https://betterdiscord.app/)
+ > - [starship.rs](https://starship.rs/)
+ > - [cava](https://github.com/karlstav/cava)
+ > - [dunst](https://dunst-project.org/)
+ > - [gotop](https://github.com/cjbassi/gotop)
+ > - [htop](https://htop.dev/)
+ > - [spicetify](https://github.com/khanhas/spicetify-cli)
+ > - [rofi](https://github.com/davatorium/rofi)
+ > - [ranger](https://ranger.github.io/)
+ > - [Vim](https://www.vim.org/)
+ > - [NuShell](https://www.nushell.sh/)
+ > - [Alacritty](https://github.com/alacritty/alacritty)
+ > - [compton](https://github.com/chjj/compton)
+ > - [neofetch](https://github.com/dylanaraps/neofetch)
+ > - [pfetch](https://github.com/dylanaraps/pfetch)
+ > - [cpufetch](https://github.com/Dr-Noob/cpufetch)
+ > - [polybar](https://polybar.github.io/)
+ > - [bat](https://github.com/sharkdp/bat)
+ > - [Flameshot](https://flameshot.org/)
  
 ## Gallery
 
@@ -60,10 +60,4 @@
 | Magenta     | ![#D990CD](https://via.placeholder.com/10/D990CD?text=+) `#D990CD` |
 | Cyan        | ![#81D4EE](https://via.placeholder.com/10/81D4EE?text=+) `#81D4EE` |
 | White       | ![#E3E3E3](https://via.placeholder.com/10/E3E3E3?text=+) `#E3E3E3` |
-
-## Credits
-
- - [obliviousofcraps's dotfiles](https://github.com/obliviousofcraps/mf-dots)
- - [Wallpaper](https://twitter.com/owakita_/status/1259478540447350784?lang=en)
- - [r/unixporn's post of the month](https://www.reddit.com/r/unixporn/wiki/info/postofthemonth)
 
