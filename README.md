@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/harshhhdev/dotfiles#%EF%B8%8F-gallery">Image Gallery</a>
     ·
-  <a href="https://github.com/harshhhdev/dotfiles#-colours">Colours</a>
+  <a href="https://github.com/harshhhdev/dotfiles#-colours">Colors</a>
       ·
   <a href="https://youtu.be/c_LK3sYhFw8">Video Tour</a>
  </p>
@@ -46,7 +46,7 @@
 ![image](https://user-images.githubusercontent.com/69592270/144723927-2c924750-e5fc-487e-a336-4ee57b269038.png)
 ![image](https://user-images.githubusercontent.com/69592270/144723969-f8345c5a-29ab-4ee5-bded-ea014cef8b72.png)
 
-## Colours
+## Colors
 
 | Color       | Hex                                                                |
 | ----------- | ------------------------------------------------------------------ |
