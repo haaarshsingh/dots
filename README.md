@@ -15,7 +15,7 @@
  
 ## Applications
 
- - [Archcraft](https://archcraft.io/)
+ - [Arch Linux](https://archlinux.org/)
  - [i3-gaps-rounded](https://github.com/terroo/i3-radius)
  - [BetterDiscord](https://betterdiscord.app/)
  - [starship.rs](https://starship.rs/)
