@@ -1,14 +1,14 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/69592270/201533156-97b338c5-83ac-4eac-a1b4-59630016ea89.png" />
-  <a href="https://harshsingh.xyz/">
+  <a href="https://harshsingh.me/">
     <h2 align="center">dotfiles</h2>
   </a>
 </p> 
 <p align="center">Pastel-themed i3wm and Arch Linux rice</p>
 <p align="center">
-  <a href="https://github.com/harshhhdev/dotfiles#%EF%B8%8F-gallery">Image Gallery</a>
+  <a href="#gallery">Image Gallery</a>
     ·
-  <a href="https://github.com/harshhhdev/dotfiles#-colours">Colors</a>
+  <a href="#colors">Colors</a>
       ·
   <a href="https://youtu.be/c_LK3sYhFw8">Video Tour</a>
  </p>
@@ -48,18 +48,18 @@
 
 ## Colors
 
-| Color       | Hex                                                                |
-| ----------- | ------------------------------------------------------------------ |
-| Background  | ![#1D212A](https://via.placeholder.com/10/1D212A?text=+) `#1D212A` |
-| Foreground  | ![#E3E3E3](https://via.placeholder.com/10/E3E3E3?text=+) `#E3E3E3` |
-| Black       | ![#1D212A](https://via.placeholder.com/10/1D212A?text=+) `#1D212A` |
-| Red         | ![#FC8993](https://via.placeholder.com/10/FC8993?text=+) `#FC8993` |
-| Green       | ![#89E19C](https://via.placeholder.com/10/89E19C?text=+) `#89E19C` |
-| Yellow      | ![#FBDF90](https://via.placeholder.com/10/FBDF90?text=+) `#FBDF90` |
-| Blue        | ![#A7BDFB](https://via.placeholder.com/10/A7BDFB?text=+) `#A7BDFB` |
-| Magenta     | ![#D990CD](https://via.placeholder.com/10/D990CD?text=+) `#D990CD` |
-| Cyan        | ![#81D4EE](https://via.placeholder.com/10/81D4EE?text=+) `#81D4EE` |
-| White       | ![#E3E3E3](https://via.placeholder.com/10/E3E3E3?text=+) `#E3E3E3` |
+| Color       | Hex       |
+| ----------- | --------- |
+| Background  | `#1D212A` |
+| Foreground  | `#E3E3E3` |
+| Black       | `#1D212A` |
+| Red         | `#FC8993` |
+| Green       | `#89E19C` |
+| Yellow      | `#FBDF90` |
+| Blue        | `#A7BDFB` |
+| Magenta     | `#D990CD` |
+| Cyan        | `#81D4EE` |
+| White       | `#E3E3E3` |
 
 ## Credits
 
