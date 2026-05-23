@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/69592270/201533156-97b338c5-83ac-4eac-a1b4-59630016ea89.png" />
+  <img src="https://github.com/user-attachments/assets/863feb40-5cb3-4ae3-9029-c9fcba477def" />
   <a href="https://harshsingh.me/">
     <h2 align="center">dotfiles</h2>
   </a>
