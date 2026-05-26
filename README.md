@@ -67,3 +67,6 @@
  - [Wallpaper](https://twitter.com/owakita_/status/1259478540447350784?lang=en)
  - [r/unixporn's post of the month](https://www.reddit.com/r/unixporn/wiki/info/postofthemonth)
 
+***
+
+A project by [Harsh Singh](https://harshsingh.me)
